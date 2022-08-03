@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/crsr_hw21-hooks/static/css/main.04fd1e1d.css",
+    "main.js": "/crsr_hw21-hooks/static/js/main.0a013202.js",
+    "static/js/787.764a0997.chunk.js": "/crsr_hw21-hooks/static/js/787.764a0997.chunk.js",
+    "index.html": "/crsr_hw21-hooks/index.html",
+    "main.04fd1e1d.css.map": "/crsr_hw21-hooks/static/css/main.04fd1e1d.css.map",
+    "main.0a013202.js.map": "/crsr_hw21-hooks/static/js/main.0a013202.js.map",
+    "787.764a0997.chunk.js.map": "/crsr_hw21-hooks/static/js/787.764a0997.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04fd1e1d.css",
+    "static/js/main.0a013202.js"
+  ]
+}
