@@ -9,8 +9,8 @@ function App() {
   const [filterAnon, setFilterAnon] = useState(false);
 
   return (
-    <div className="min-h-[100vh] bg-slate-900 text-white grid auto-rows-min gap-[16px] p-[32px]">
-      <form className="w-[312px] text-black mx-auto">
+    <div className="p-[24px] min-h-screen bg-slate-900 text-white grid auto-rows-min gap-[16px]">
+      <form className="text-black mx-auto">
         <div className="flex justify-between text-white">
           <span>
             <input
@@ -46,16 +46,22 @@ function App() {
 
         <input
           type="text"
-          className="w-[100%] py-[8px] px-[16px] outline-none rounded-[4px] mt-[8px]"
+          className="w-[100%] py-[8px] px-[16px] outline-none rounded-[4px] my-[8px]"
           placeholder="Search..."
           value={searchValue}
           onChange={(event) => setSearchValue(event.target.value.toLowerCase())}
         />
       </form>
       {contacts
-        .filter(contact => filterMale ? contact.gender !== "male" : contact.gender !== 'all')
-        .filter(contact => filterFemale ? contact.gender !== "female" : contact.gender !== 'all')
-        .filter(contact => filterAnon ? contact.gender : contact.gender !== 'all')
+        .filter((contact) =>
+          filterMale ? contact.gender !== "male" : contact.gender !== "all"
+        )
+        .filter((contact) =>
+          filterFemale ? contact.gender !== "female" : contact.gender !== "all"
+        )
+        .filter((contact) =>
+          filterAnon ? contact.gender : contact.gender !== "all"
+        )
         .filter(
           (contact) =>
             contact.firstName.toLowerCase().includes(searchValue) ||
