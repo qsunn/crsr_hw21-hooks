@@ -46,7 +46,7 @@ function App() {
 
         <input
           type="text"
-          className="w-[100%] py-[8px] px-[16px] outline-none rounded-[4px] my-[8px]"
+          className="w-[312px] py-[8px] px-[16px] outline-none rounded-[4px] my-[8px]"
           placeholder="Search..."
           value={searchValue}
           onChange={(event) => setSearchValue(event.target.value.toLowerCase())}
